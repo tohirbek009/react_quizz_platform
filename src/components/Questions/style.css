@@ -40,6 +40,10 @@
      .singleOption{
          width: 100%;
      }
+     .controls-btn{
+         font-size: 13px !important;
+         padding: 5px 0 !important;
+     }
  }
 
  .select{

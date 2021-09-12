@@ -34,8 +34,9 @@ const Result = ({name, score}) => {
                     variant='contained'
                     color='secondary'
                     size='large'
-                    style={{alignSelf:'center', marginTop:20}}
+                    style={{alignSelf:'center', marginTop:20, color:'white'}}
                     href='/'
+
                 >
                     Go To Homepage
                 </Button>
@@ -43,7 +44,7 @@ const Result = ({name, score}) => {
             <div className="right-block">
                 <Button
                     variant='contained'
-                    color='success'
+                    color='primary'
                     size='large'
                     style={{alignSelf:'center', marginTop:20, width:'70%'}}
                     onClick={() => seeRank()}

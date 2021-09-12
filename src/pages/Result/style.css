@@ -1,8 +1,9 @@
 .result{
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 1;
     justify-content: space-between;
-}
+}   
 .result .left-block{
     width: 40%;
     display: flex;
@@ -19,4 +20,12 @@
 }
 .rank{
     width: 100%;
+}
+@media(max-width: 614px){
+    .left-block, .right-block{
+        width: 100% !important;
+    }
+    .result{
+        justify-content: center;
+    }
 }

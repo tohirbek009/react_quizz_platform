@@ -77,6 +77,7 @@ const Index = ({curQues,setCurQues,questions,options,correct,score,setScore,setQ
                                 onClick={() => handleCheck(i)}
                                 className={`singleOption ${selected && handleSelect(i)}`}
                                 key={i}
+                                
                                 disabled={selected}
                             >{i}</button>
                          ))
@@ -90,6 +91,7 @@ const Index = ({curQues,setCurQues,questions,options,correct,score,setScore,setQ
                         style={{width: 185}}
                         href='/'
                         onClick={handleQuit}
+                        className='controls-btn'
                     >Quit</Button>
                     <Button
                         variant="contained"
@@ -97,6 +99,7 @@ const Index = ({curQues,setCurQues,questions,options,correct,score,setScore,setQ
                         size='large'
                         style={{width: 185}}
                         onClick={handleNext}
+                        className='controls-btn'
                     >Next Question</Button>
                 </div>
             </div>
